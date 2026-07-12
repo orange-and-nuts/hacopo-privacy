@@ -20,10 +20,10 @@
   .codes { display:grid; grid-template-columns:1fr; gap:6px; margin:10px 0; }
   .code { background:#fff; border:1px solid #ccc; border-radius:6px; padding:8px 10px; font-size:0.95rem; letter-spacing:0.5px; }
   @media (min-width:520px){ .codes{ grid-template-columns:1fr 1fr; } }
-  .shots { display:flex; flex-wrap:wrap; gap:12px; margin:12px 0; }
-  .shots figure { margin:0; flex:1 1 200px; max-width:260px; }
+  .shots { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:12px 0; }
+  .shots figure { margin:0; }
   .shots img { width:100%; height:auto; border:1px solid #ccc; border-radius:8px; display:block; }
-  .shots figcaption { font-size:0.85rem; color:#666; margin-top:4px; text-align:center; }
+  .shots figcaption { font-size:15pt; font-weight:bold; color:#666; margin-bottom:6px; text-align:center; }
   @media (prefers-color-scheme: dark){
     body{ background:#16171b; color:#e6e6e8; } h1,h2{ color:#aeb6ff; } a{ color:#9fa8ff; }
     .code{ background:#23252c; border-color:#3a3d47; } .note{ background:#2a2410; border-color:#5c5020; color:#f0e6c8; }
@@ -48,10 +48,10 @@
   <h2>ステップ③ プロモコードで無料インストール</h2>
   <p>下の画像の手順で、購入画面で <strong>1人1個</strong> コードを使ってください（各コードは1回限り・使い捨て）。使われていないコードを1つ選んでご利用ください。</p>
   <div class="shots">
-    <figure><img src="tester_desc_01.png" alt="コード利用の手順1"><figcaption>①</figcaption></figure>
-    <figure><img src="tester_desc_02.png" alt="コード利用の手順2"><figcaption>②</figcaption></figure>
-    <figure><img src="tester_desc_03.png" alt="コード利用の手順3"><figcaption>③</figcaption></figure>
-    <figure><img src="tester_desc_04.png" alt="コード利用の手順4"><figcaption>④</figcaption></figure>
+    <figure><figcaption>①</figcaption><img src="tester_desc_01.png" alt="コード利用の手順1"></figure>
+    <figure><figcaption>②</figcaption><img src="tester_desc_02.png" alt="コード利用の手順2"></figure>
+    <figure><figcaption>③</figcaption><img src="tester_desc_03.png" alt="コード利用の手順3"></figure>
+    <figure><figcaption>④</figcaption><img src="tester_desc_04.png" alt="コード利用の手順4"></figure>
   </div>
   <ol>
     <li>ステップ②の「Google Play でハコポを開く」からハコポのページを開く</li>
