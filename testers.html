@@ -20,6 +20,10 @@
   .codes { display:grid; grid-template-columns:1fr; gap:6px; margin:10px 0; }
   .code { background:#fff; border:1px solid #ccc; border-radius:6px; padding:8px 10px; font-size:0.95rem; letter-spacing:0.5px; }
   @media (min-width:520px){ .codes{ grid-template-columns:1fr 1fr; } }
+  .shots { display:flex; flex-wrap:wrap; gap:12px; margin:12px 0; }
+  .shots figure { margin:0; flex:1 1 200px; max-width:260px; }
+  .shots img { width:100%; height:auto; border:1px solid #ccc; border-radius:8px; display:block; }
+  .shots figcaption { font-size:0.85rem; color:#666; margin-top:4px; text-align:center; }
   @media (prefers-color-scheme: dark){
     body{ background:#16171b; color:#e6e6e8; } h1,h2{ color:#aeb6ff; } a{ color:#9fa8ff; }
     .code{ background:#23252c; border-color:#3a3d47; } .note{ background:#2a2410; border-color:#5c5020; color:#f0e6c8; }
@@ -32,16 +36,22 @@
   <p>配達の単価計算サポートアプリ「ハコポ」のクローズドテストにご協力ください。以下の3ステップで参加できます（有料アプリですが、下のコードで無料でインストールできます）。</p>
 
   <h2>ステップ① テスター用 Google グループに参加（必須）</h2>
+  <p class="note">TestCrew の Google グループに参加している人は、この手順は不要です（すでにテスターとして登録されています）。ステップ②へお進みください。</p>
   <p>まず下のグループに参加してください。参加すると自動的にテスターになります。<strong>グループに参加していないと、アプリはストアに表示されません。</strong></p>
   <p><a class="btn" href="https://groups.google.com/g/hacopotester">テスター用グループに参加する</a></p>
   <p>リンクを開き、「グループに参加」を押してください（参加に使う Google アカウントは、アプリをインストールする端末のアカウントと同じにしてください）。</p>
 
-  <h2>ステップ② Google Play でハコポを開く</h2>
-  <p>グループ参加後、<strong>数分〜十数分待ってから</strong>、参加したのと同じ Google アカウントで下のリンクを開いてください。テスト版が表示されます（反映まで少し時間がかかることがあります）。</p>
+  <h2>ステップ② アプリが表示されることを確認する</h2>
+  <p>グループ参加後、<strong>数分〜十数分待ってから</strong>、参加したのと同じ Google アカウントで下のリンクを開いてください。ハコポのページが表示されれば、テスターとして認識されています（「アイテムが見つかりません」と出る場合は、もう少し待つか、グループに参加できているか確認してください）。</p>
   <p><a class="btn" href="https://play.google.com/store/apps/details?id=com.hacopo.app">Google Play でハコポを開く</a></p>
 
   <h2>ステップ③ プロモコードで無料インストール</h2>
-  <p>購入画面で <strong>1人1個</strong> 下記コードを使ってください（各コードは1回限り・使い捨て）。使われていないコードを1つ選んでご利用ください。</p>
+  <p>下の画像の手順で、購入画面で <strong>1人1個</strong> コードを使ってください（各コードは1回限り・使い捨て）。使われていないコードを1つ選んでご利用ください。</p>
+  <div class="shots">
+    <figure><img src="tester_desc_01.png" alt="コード利用の手順1"><figcaption>①</figcaption></figure>
+    <figure><img src="tester_desc_02.png" alt="コード利用の手順2"><figcaption>②</figcaption></figure>
+    <figure><img src="tester_desc_03.png" alt="コード利用の手順3"><figcaption>③</figcaption></figure>
+  </div>
   <ol>
     <li>Google Play アプリ → 右上のアカウントアイコン → 「お支払いと定期購入」→「コードを利用」</li>
     <li>下のコードを1つ入力 → 適用 → ハコポを ¥0 でインストール</li>
